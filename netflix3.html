@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVASTREAM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+
+<!-- ================================================
+     PAGE 1 — HOME
+================================================ -->
+<div id="homePage">
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar" id="mainNavbar">
+    <div class="logo">NOVA<span>STREAM</span></div>
+    <nav>
+      <a href="#" id="navHome">Home</a>
+      <a href="#" id="navTrending">Trending</a>
+      <a href="#" id="navTop10">Top 10</a>
+      <a href="#" id="navMovies">Movies</a>
+    </nav>
+    <button class="signin-btn" id="signinBtn">Sign In</button>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero" id="homeSection">
+    <div class="hero-slider">
+      <div class="hero-track">
+
+        <div class="hero-slide">
+          <img src="newimg1.png" alt="The Last Kingdom">
+          <div class="hero-text">
+            <div class="hero-badge">Now Streaming</div>
+            <h1>The Last Kingdom</h1>
+            <p>War. Power. Destiny.</p>
+            <div class="hero-buttons">
+              <button class="play-btn">
+                <span class="play-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                Watch Now
+              </button>
+              <button class="info-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="newimg2.png" alt="Shadow Empire">
+          <div class="hero-text">
+            <div class="hero-badge">Now Streaming</div>
+            <h1>Shadow Empire</h1>
+            <p>When darkness rises, heroes fall.</p>
+            <div class="hero-buttons">
+              <button class="play-btn">
+                <span class="play-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                Watch Now
+              </button>
+              <button class="info-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="newimg3.jpg" alt="Midnight Horizon">
+          <div class="hero-text">
+            <div class="hero-badge">Now Streaming</div>
+            <h1>Midnight Horizon</h1>
+            <p>Beyond the stars lies truth.</p>
+            <div class="hero-buttons">
+              <button class="play-btn">
+                <span class="play-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                Watch Now
+              </button>
+              <button class="info-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="newimg4.jpg" alt="Silent Code">
+          <div class="hero-text">
+            <div class="hero-badge">Now Streaming</div>
+            <h1>Silent Code</h1>
+            <p>One hacker. One mission.</p>
+            <div class="hero-buttons">
+              <button class="play-btn">
+                <span class="play-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                Watch Now
+              </button>
+              <button class="info-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="newimg5.png" alt="Crimson Night">
+          <div class="hero-text">
+            <div class="hero-badge">Now Streaming</div>
+            <h1>Crimson Night</h1>
+            <p>The city bleeds after midnight.</p>
+            <div class="hero-buttons">
+              <button class="play-btn">
+                <span class="play-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                Watch Now
+              </button>
+              <button class="info-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Slide progress dots -->
+    <div class="hero-progress">
+      <div class="hero-progress-dot active"></div>
+      <div class="hero-progress-dot"></div>
+      <div class="hero-progress-dot"></div>
+      <div class="hero-progress-dot"></div>
+      <div class="hero-progress-dot"></div>
+    </div>
+  </section>
+
+  <!-- Trending Section -->
+  <section class="section" id="trendingSection">
+    <h2>Trending Now</h2>
+    <div class="row">
+      <div class="card" data-title="Movie 1"  data-video="movie1.mp4"><img src="img1.jpg"  alt="Movie 1"><video  muted loop playsinline preload="none"><source src="temp1.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 2"  data-video="movie2.mp4"><img src="img2.png"  alt="Movie 2"><video  muted loop playsinline preload="none"><source src="temp2.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 3"  data-video="movie3.mp4"><img src="img3.png"  alt="Movie 3"><video  muted loop playsinline preload="none"><source src="temp3.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 4"  data-video="movie4.mp4"><img src="img4.png"  alt="Movie 4"><video  muted loop playsinline preload="none"><source src="temp4.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 5"  data-video="movie5.mp4"><img src="img5.png"  alt="Movie 5"><video  muted loop playsinline preload="none"><source src="temp5.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 6"  data-video="movie6.mp4"><img src="img6.png"  alt="Movie 6"><video  muted loop playsinline preload="none"><source src="temp6.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 7"  data-video="movie7.mp4"><img src="img7.png"  alt="Movie 7"><video  muted loop playsinline preload="none"><source src="temp7.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 8"  data-video="movie8.mp4"><img src="img8.png"  alt="Movie 8"><video  muted loop playsinline preload="none"><source src="temp8.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 9"  data-video="movie9.mp4"><img src="img9.png"  alt="Movie 9"><video  muted loop playsinline preload="none"><source src="temp9.mp4"  type="video/mp4"></video></div>
+      <div class="card" data-title="Movie 10" data-video="movie10.mp4"><img src="img10.png" alt="Movie 10"><video muted loop playsinline preload="none"><source src="temp10.mp4" type="video/mp4"></video></div>
+    </div>
+  </section>
+
+  <!-- Top Weekly Movies -->
+  <section class="section top-weekly" id="moviesSection">
+    <h2>Top 2 Weekly Movies</h2>
+    <div class="weekly-wrapper">
+
+      <div class="weekly-card" data-title="Midnight Horizon" data-video="weekly01.mp4">
+        <video class="weekly-video" muted loop playsinline preload="none">
+          <source src="weekly01.mp4" type="video/mp4">
+        </video>
+        <img src="weekly1.jpg" alt="Midnight Horizon" class="weekly-poster">
+        <div class="weekly-overlay">
+          <div class="weekly-content">
+            <span class="weekly-rank">#1 This Week</span>
+            <h3>Midnight Horizon</h3>
+            <div class="weekly-meta">
+              <span>2026</span><span>&#8226;</span>
+              <span>Action / Sci-Fi</span><span>&#8226;</span>
+              <span class="rating">&#11088; 8.7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="weekly-card" data-title="Echoes of Silence" data-video="weekly02.mp4">
+        <video class="weekly-video" muted loop playsinline preload="none">
+          <source src="weekly02.mp4" type="video/mp4">
+        </video>
+        <img src="weekly2.jpg" alt="Echoes of Silence" class="weekly-poster">
+        <div class="weekly-overlay">
+          <div class="weekly-content">
+            <span class="weekly-rank">#2 This Week</span>
+            <h3>Echoes of Silence</h3>
+            <div class="weekly-meta">
+              <span>2026</span><span>&#8226;</span>
+              <span>Drama / Thriller</span><span>&#8226;</span>
+              <span class="rating">&#11088; 8.4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing Plans -->
+  <section class="pricing-section" id="plansSection">
+    <div class="pricing-bg"><img src="pricing-bg.jpg" alt=""></div>
+    <div class="pricing-content">
+      <h2>Choose Your Plan</h2>
+      <p class="pricing-sub">Stream unlimited movies &amp; series in ultra quality</p>
+      <div class="pricing-wrapper">
+
+        <div class="pricing-card">
+          <h3>Monthly Plan</h3>
+          <p class="price">$10<span>/month</span></p>
+          <ul>
+            <li>&#10004; 4K Ultra HD</li>
+            <li>&#10004; Watch on 4 devices</li>
+            <li>&#10004; Cancel anytime</li>
+          </ul>
+          <button class="plan-btn" id="monthlyBtn">Get Monthly</button>
+        </div>
+
+        <div class="pricing-card highlight">
+          <div class="badge">Save 20%</div>
+          <h3>Annual Plan</h3>
+          <p class="price">$99<span>/year</span></p>
+          <ul>
+            <li>&#10004; 4K Ultra HD</li>
+            <li>&#10004; Watch on 4 devices</li>
+            <li>&#10004; Priority support</li>
+          </ul>
+          <button class="plan-btn" id="annualBtn">Get Annual</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms</a>
+      </nav>
+      <nav class="footer-secondary">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Settings</a>
+        <a href="#">Ad Choices</a>
+      </nav>
+      <div class="footer-info">
+        <p>&copy; 2026 NOVASTREAM. All Rights Reserved.</p>
+        <p class="footer-disclaimer">This website may contain mature content.</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- end #homePage -->
+
+
+<!-- ================================================
+     PAGE 2 — SIGN IN
+================================================ -->
+<div id="signinPage">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromSignin">&#8592;</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="auth-page">
+    <div class="auth-card">
+      <h1>Welcome Back</h1>
+      <p class="auth-subtitle">Sign in to continue watching.</p>
+
+      <div class="form-group">
+        <label for="siEmail">Email Address</label>
+        <input type="email" id="siEmail" placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="siPassword">Password</label>
+        <input type="password" id="siPassword" placeholder="Enter your password">
+      </div>
+
+      <div class="form-row">
+        <label class="checkbox-label">
+          <input type="checkbox" id="rememberMe"> Remember me
+        </label>
+        <a href="#" class="forgot-link" id="goToForgot">Forgot password?</a>
+      </div>
+
+      <button class="submit-btn" id="submitSignin">Sign In</button>
+      <p class="error-msg" id="siError">Please fill in all fields.</p>
+      <p class="auth-switch">Don't have an account? <a href="#" id="goToSignup">Create one</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     PAGE 3 — SIGN UP
+================================================ -->
+<div id="signupPage">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromSignup">&#8592;</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="auth-page">
+    <div class="auth-card wide">
+      <h1>Create Account</h1>
+      <p class="auth-subtitle">Join NOVASTREAM and start watching today.</p>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="suFirst">First Name</label>
+          <input type="text" id="suFirst" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label for="suLast">Last Name</label>
+          <input type="text" id="suLast" placeholder="Doe">
+        </div>
+        <div class="form-group full">
+          <label for="suEmail">Email Address</label>
+          <input type="email" id="suEmail" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="suPassword">Password</label>
+          <input type="password" id="suPassword" placeholder="Min. 8 characters">
+        </div>
+        <div class="form-group">
+          <label for="suConfirm">Confirm Password</label>
+          <input type="password" id="suConfirm" placeholder="Repeat password">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="checkbox-label">
+          <input type="checkbox" id="agreeTerms">
+          I agree to the <a href="#">Terms &amp; Privacy Policy</a>
+        </label>
+      </div>
+
+      <button class="submit-btn" id="submitSignup">Create Account</button>
+      <p class="error-msg" id="suError">Please fill in all fields.</p>
+      <p class="auth-switch">Already have an account? <a href="#" id="goToSignin">Sign In</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     PAGE 4 — FORGOT PASSWORD
+================================================ -->
+<div id="forgotPage">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromForgot">&#8592;</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="auth-page">
+    <div class="auth-card">
+      <h1>Reset Password</h1>
+      <p class="auth-subtitle">Enter your new password below.</p>
+
+      <div class="form-group">
+        <label for="fpEmail">Email Address</label>
+        <input type="email" id="fpEmail" placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="fpNewPass">New Password</label>
+        <input type="password" id="fpNewPass" placeholder="Min. 8 characters">
+      </div>
+
+      <div class="form-group">
+        <label for="fpConfirm">Confirm New Password</label>
+        <input type="password" id="fpConfirm" placeholder="Repeat new password">
+      </div>
+
+      <button class="submit-btn" id="submitForgot">Reset Password</button>
+      <p class="error-msg" id="fpError">Please fill in all fields.</p>
+      <p class="auth-switch">Remembered it? <a href="#" id="backToSignin">Sign In</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     PAGE 5 — PAYMENT
+================================================ -->
+<div id="paymentPage">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromPayment">&#8592;</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="payment-page">
+    <div class="payment-card">
+
+      <!-- Selected plan summary -->
+      <div class="plan-summary">
+        <div class="plan-summary-name" id="planName">Monthly Plan</div>
+        <div class="plan-summary-price" id="planPrice">$10 / month</div>
+      </div>
+
+      <h1>Payment Details</h1>
+      <p class="auth-subtitle">Complete your subscription below.</p>
+
+      <div class="form-group">
+        <label for="cardName">Name on Card</label>
+        <input type="text" id="cardName" placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+      </div>
+
+      <div class="form-grid two-col">
+        <div class="form-group">
+          <label for="cardExpiry">Expiry</label>
+          <input type="text" id="cardExpiry" placeholder="MM / YY" maxlength="7">
+        </div>
+        <div class="form-group">
+          <label for="cardCVV">CVV</label>
+          <input type="text" id="cardCVV" placeholder="123" maxlength="4">
+        </div>
+      </div>
+
+      <div class="secure-note">&#128274; Secured with 256-bit SSL encryption</div>
+
+      <button class="submit-btn" id="submitPayment">Confirm &amp; Subscribe</button>
+      <p class="error-msg" id="payError">Please fill in all payment fields.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     PAGE 6 — SUCCESS
+================================================ -->
+<div id="successPage">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromSuccess">&#8592; Back to Home</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="success-page">
+    <div class="success-card">
+      <div class="success-icon">&#10003;</div>
+      <h1>You're All Set!</h1>
+      <p class="success-msg">Welcome to NOVASTREAM. Your subscription is now active.</p>
+      <p class="success-plan" id="successPlanName">Monthly Plan — $10/month</p>
+      <button class="submit-btn" id="successHomeBtn">Start Watching</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     PAGE 7 — TOP 10
+================================================ -->
+<div id="top10Page">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromTop10">&#8592;</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="top10-page">
+    <div class="top10-header">
+      <h1>Top <span>10</span> This Week</h1>
+      <p>The most-watched titles on NOVASTREAM right now</p>
+    </div>
+
+    <div class="top10-grid">
+      <div class="top10-card" data-title="Movie 1"  data-video="movie1.mp4"><div  class="top10-rank">01</div><img src="img1.jpg"  alt="Movie 1"><div  class="top10-overlay"><h3>Movie 1</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 2"  data-video="movie2.mp4"><div  class="top10-rank">02</div><img src="img2.png"  alt="Movie 2"><div  class="top10-overlay"><h3>Movie 2</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 3"  data-video="movie3.mp4"><div  class="top10-rank">03</div><img src="img3.png"  alt="Movie 3"><div  class="top10-overlay"><h3>Movie 3</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 4"  data-video="movie4.mp4"><div  class="top10-rank">04</div><img src="img4.png"  alt="Movie 4"><div  class="top10-overlay"><h3>Movie 4</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 5"  data-video="movie5.mp4"><div  class="top10-rank">05</div><img src="img5.png"  alt="Movie 5"><div  class="top10-overlay"><h3>Movie 5</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 6"  data-video="movie6.mp4"><div  class="top10-rank">06</div><img src="img6.png"  alt="Movie 6"><div  class="top10-overlay"><h3>Movie 6</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 7"  data-video="movie7.mp4"><div  class="top10-rank">07</div><img src="img7.png"  alt="Movie 7"><div  class="top10-overlay"><h3>Movie 7</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 8"  data-video="movie8.mp4"><div  class="top10-rank">08</div><img src="img8.png"  alt="Movie 8"><div  class="top10-overlay"><h3>Movie 8</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 9"  data-video="movie9.mp4"><div  class="top10-rank">09</div><img src="img9.png"  alt="Movie 9"><div  class="top10-overlay"><h3>Movie 9</h3><button  class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+      <div class="top10-card" data-title="Movie 10" data-video="movie10.mp4"><div class="top10-rank">10</div><img src="img10.png" alt="Movie 10"><div class="top10-overlay"><h3>Movie 10</h3><button class="top10-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Play</button></div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     PAGE 8 — MOVIES BY GENRE
+================================================ -->
+<div id="moviesPage">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromMovies">&#8592;</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="movies-browse-page">
+    <div class="movies-browse-header">
+      <h1>All <span>Movies</span></h1>
+      <p>Explore our full library, sorted by genre</p>
+    </div>
+
+    <!-- Genre filter tabs -->
+    <div class="genre-tabs">
+      <button class="genre-tab active" data-genre="all">All</button>
+      <button class="genre-tab" data-genre="action">Action</button>
+      <button class="genre-tab" data-genre="scifi">Sci-Fi</button>
+      <button class="genre-tab" data-genre="thriller">Thriller</button>
+      <button class="genre-tab" data-genre="drama">Drama</button>
+      <button class="genre-tab" data-genre="horror">Horror</button>
+      <button class="genre-tab" data-genre="romance">Romance</button>
+    </div>
+
+    <!-- Action -->
+    <div class="genre-section" data-section="action">
+      <h2 class="genre-title"><span class="genre-dot"></span>Action</h2>
+      <div class="movies-grid">
+        <div class="movie-browse-card" data-genre="action" data-title="The Last Kingdom" data-video="movie1.mp4"><img src="img1.jpg" alt="The Last Kingdom"><div class="movie-browse-overlay"><h3>The Last Kingdom</h3><div class="movie-browse-meta"><span>2025</span><span>&#11088; 8.7</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Action</div></div>
+        <div class="movie-browse-card" data-genre="action" data-title="Shadow Empire"     data-video="movie2.mp4"><img src="img2.png" alt="Shadow Empire"><div class="movie-browse-overlay"><h3>Shadow Empire</h3><div class="movie-browse-meta"><span>2026</span><span>&#11088; 8.2</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Action</div></div>
+        <div class="movie-browse-card" data-genre="action" data-title="Iron Veil"         data-video="movie3.mp4"><img src="img3.png" alt="Iron Veil"><div class="movie-browse-overlay"><h3>Iron Veil</h3><div class="movie-browse-meta"><span>2026</span><span>&#11088; 7.9</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Action</div></div>
+        <div class="movie-browse-card" data-genre="action" data-title="Crimson Night"     data-video="movie4.mp4"><img src="img4.png" alt="Crimson Night"><div class="movie-browse-overlay"><h3>Crimson Night</h3><div class="movie-browse-meta"><span>2025</span><span>&#11088; 8.0</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Action</div></div>
+      </div>
+    </div>
+
+    <!-- Sci-Fi -->
+    <div class="genre-section" data-section="scifi">
+      <h2 class="genre-title"><span class="genre-dot"></span>Sci-Fi</h2>
+      <div class="movies-grid">
+        <div class="movie-browse-card" data-genre="scifi" data-title="Midnight Horizon" data-video="weekly01.mp4"><img src="weekly1.jpg" alt="Midnight Horizon"><div class="movie-browse-overlay"><h3>Midnight Horizon</h3><div class="movie-browse-meta"><span>2026</span><span>&#11088; 8.7</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Sci-Fi</div></div>
+        <div class="movie-browse-card" data-genre="scifi" data-title="Silent Code"      data-video="movie5.mp4"><img  src="img5.png"    alt="Silent Code"><div     class="movie-browse-overlay"><h3>Silent Code</h3><div     class="movie-browse-meta"><span>2026</span><span>&#11088; 7.8</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Sci-Fi</div></div>
+        <div class="movie-browse-card" data-genre="scifi" data-title="Void Signal"      data-video="movie6.mp4"><img  src="img6.png"    alt="Void Signal"><div     class="movie-browse-overlay"><h3>Void Signal</h3><div     class="movie-browse-meta"><span>2025</span><span>&#11088; 8.1</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Sci-Fi</div></div>
+      </div>
+    </div>
+
+    <!-- Thriller -->
+    <div class="genre-section" data-section="thriller">
+      <h2 class="genre-title"><span class="genre-dot"></span>Thriller</h2>
+      <div class="movies-grid">
+        <div class="movie-browse-card" data-genre="thriller" data-title="Echoes of Silence" data-video="weekly02.mp4"><img src="weekly2.jpg" alt="Echoes of Silence"><div class="movie-browse-overlay"><h3>Echoes of Silence</h3><div class="movie-browse-meta"><span>2026</span><span>&#11088; 8.4</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Thriller</div></div>
+        <div class="movie-browse-card" data-genre="thriller" data-title="The Reckoning"     data-video="movie7.mp4"><img  src="img7.png"    alt="The Reckoning"><div    class="movie-browse-overlay"><h3>The Reckoning</h3><div    class="movie-browse-meta"><span>2025</span><span>&#11088; 7.6</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Thriller</div></div>
+        <div class="movie-browse-card" data-genre="thriller" data-title="Dark Signals"      data-video="movie8.mp4"><img  src="img8.png"    alt="Dark Signals"><div     class="movie-browse-overlay"><h3>Dark Signals</h3><div     class="movie-browse-meta"><span>2026</span><span>&#11088; 7.9</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Thriller</div></div>
+      </div>
+    </div>
+
+    <!-- Drama -->
+    <div class="genre-section" data-section="drama">
+      <h2 class="genre-title"><span class="genre-dot"></span>Drama</h2>
+      <div class="movies-grid">
+        <div class="movie-browse-card" data-genre="drama" data-title="Ash & Rain"           data-video="movie9.mp4"><img  src="img9.png"  alt="Ash &amp; Rain"><div      class="movie-browse-overlay"><h3>Ash &amp; Rain</h3><div      class="movie-browse-meta"><span>2025</span><span>&#11088; 8.3</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Drama</div></div>
+        <div class="movie-browse-card" data-genre="drama" data-title="The Weight of Wings"  data-video="movie10.mp4"><img src="img10.png" alt="The Weight of Wings"><div class="movie-browse-overlay"><h3>The Weight of Wings</h3><div class="movie-browse-meta"><span>2026</span><span>&#11088; 8.5</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Drama</div></div>
+      </div>
+    </div>
+
+    <!-- Horror -->
+    <div class="genre-section" data-section="horror">
+      <h2 class="genre-title"><span class="genre-dot"></span>Horror</h2>
+      <div class="movies-grid">
+        <div class="movie-browse-card" data-genre="horror" data-title="Hollow Grave" data-video="movie1.mp4"><img src="img3.png" alt="Hollow Grave"><div class="movie-browse-overlay"><h3>Hollow Grave</h3><div class="movie-browse-meta"><span>2025</span><span>&#11088; 7.4</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Horror</div></div>
+        <div class="movie-browse-card" data-genre="horror" data-title="Black Parish"  data-video="movie2.mp4"><img src="img4.png" alt="Black Parish"><div  class="movie-browse-overlay"><h3>Black Parish</h3><div  class="movie-browse-meta"><span>2026</span><span>&#11088; 7.7</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Horror</div></div>
+      </div>
+    </div>
+
+    <!-- Romance -->
+    <div class="genre-section" data-section="romance">
+      <h2 class="genre-title"><span class="genre-dot"></span>Romance</h2>
+      <div class="movies-grid">
+        <div class="movie-browse-card" data-genre="romance" data-title="Letters Never Sent" data-video="movie3.mp4"><img src="img5.png" alt="Letters Never Sent"><div class="movie-browse-overlay"><h3>Letters Never Sent</h3><div class="movie-browse-meta"><span>2025</span><span>&#11088; 8.1</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Romance</div></div>
+        <div class="movie-browse-card" data-genre="romance" data-title="Still Waters"        data-video="movie4.mp4"><img src="img6.png" alt="Still Waters"><div        class="movie-browse-overlay"><h3>Still Waters</h3><div        class="movie-browse-meta"><span>2026</span><span>&#11088; 7.9</span></div><button class="browse-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button></div><div class="movie-browse-badge">Romance</div></div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end #moviesPage -->
+
+
+<!-- ================================================
+     PAGE 9 — VIDEO PLAYER
+================================================ -->
+<div id="videoSection">
+  <header class="sub-navbar">
+    <button class="back-btn" id="backFromVideo">&#8592; Back</button>
+    <span class="sub-logo">NOVA<span>STREAM</span></span>
+  </header>
+
+  <div class="video-page">
+    <div class="video-wrapper">
+      <video id="moviePlayer" controls autoplay>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================
+     JAVASCRIPT
+================================================ -->
+<script>
+
+  // ----- All pages in one object -----
+  var pages = {
+    home:    document.getElementById('homePage'),
+    signin:  document.getElementById('signinPage'),
+    signup:  document.getElementById('signupPage'),
+    forgot:  document.getElementById('forgotPage'),
+    payment: document.getElementById('paymentPage'),
+    success: document.getElementById('successPage'),
+    top10:   document.getElementById('top10Page'),
+    movies:  document.getElementById('moviesPage'),
+    video:   document.getElementById('videoSection')
+  };
+
+  // Remembers which page the video player should go back to
+  var videoReturnPage = 'home';
+
+  // Hide all pages, then show the one we want
+  function showPage(name) {
+    Object.keys(pages).forEach(function(key) {
+      pages[key].style.display = 'none';
+    });
+    pages[name].style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+
+  // ----- Navbar shrinks on scroll -----
+  var mainNavbar = document.getElementById('mainNavbar');
+  window.addEventListener('scroll', function() {
+    mainNavbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+
+  // ----- Main nav links -----
+  document.getElementById('navHome').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('home');
+  });
+
+  document.getElementById('navTrending').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('home');
+    // Small delay so the home page renders before scrolling
+    setTimeout(function() {
+      document.getElementById('trendingSection').scrollIntoView({ behavior: 'smooth' });
+    }, 80);
+  });
+
+  document.getElementById('navTop10').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('top10');
+  });
+
+  document.getElementById('navMovies').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('movies');
+  });
+
+
+  // ----- Sign In page -----
+  document.getElementById('signinBtn').addEventListener('click', function() {
+    showPage('signin');
+  });
+
+  document.getElementById('backFromSignin').addEventListener('click', function() {
+    document.getElementById('siError').style.display = 'none';
+    showPage('home');
+  });
+
+  document.getElementById('submitSignin').addEventListener('click', function() {
+    var email = document.getElementById('siEmail').value.trim();
+    var pass  = document.getElementById('siPassword').value.trim();
+    var err   = document.getElementById('siError');
+
+    if (!email || !pass) {
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none';
+    showPage('home');
+  });
+
+  document.getElementById('goToSignup').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('signup');
+  });
+
+  // "Forgot password?" goes to the reset page
+  document.getElementById('goToForgot').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('forgot');
+  });
+
+
+  // ----- Sign Up page -----
+  document.getElementById('backFromSignup').addEventListener('click', function() {
+    document.getElementById('suError').style.display = 'none';
+    showPage('signin');
+  });
+
+  document.getElementById('goToSignin').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('signin');
+  });
+
+  document.getElementById('submitSignup').addEventListener('click', function() {
+    var first   = document.getElementById('suFirst').value.trim();
+    var last    = document.getElementById('suLast').value.trim();
+    var email   = document.getElementById('suEmail').value.trim();
+    var pass    = document.getElementById('suPassword').value.trim();
+    var confirm = document.getElementById('suConfirm').value.trim();
+    var agreed  = document.getElementById('agreeTerms').checked;
+    var err     = document.getElementById('suError');
+
+    if (!first || !last || !email || !pass || !confirm || !agreed) {
+      err.textContent = 'Please fill in all fields and agree to terms.';
+      err.style.display = 'block';
+      return;
+    }
+    if (pass !== confirm) {
+      err.textContent = 'Passwords do not match.';
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none';
+    showPage('home');
+  });
+
+
+  // ----- Forgot Password page -----
+  document.getElementById('backFromForgot').addEventListener('click', function() {
+    document.getElementById('fpError').style.display = 'none';
+    showPage('signin');
+  });
+
+  document.getElementById('backToSignin').addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage('signin');
+  });
+
+  document.getElementById('submitForgot').addEventListener('click', function() {
+    var email   = document.getElementById('fpEmail').value.trim();
+    var newPass = document.getElementById('fpNewPass').value.trim();
+    var confirm = document.getElementById('fpConfirm').value.trim();
+    var err     = document.getElementById('fpError');
+
+    if (!email || !newPass || !confirm) {
+      err.textContent = 'Please fill in all fields.';
+      err.style.display = 'block';
+      return;
+    }
+    if (newPass !== confirm) {
+      err.textContent = 'Passwords do not match.';
+      err.style.display = 'block';
+      return;
+    }
+    if (newPass.length < 8) {
+      err.textContent = 'Password must be at least 8 characters.';
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none';
+    // Password reset done — send back to sign in
+    showPage('signin');
+  });
+
+
+  // ----- Pricing / Payment -----
+  document.getElementById('monthlyBtn').addEventListener('click', function() {
+    document.getElementById('planName').textContent       = 'Monthly Plan';
+    document.getElementById('planPrice').textContent      = '$10 / month';
+    document.getElementById('successPlanName').textContent = 'Monthly Plan — $10/month';
+    showPage('payment');
+  });
+
+  document.getElementById('annualBtn').addEventListener('click', function() {
+    document.getElementById('planName').textContent       = 'Annual Plan';
+    document.getElementById('planPrice').textContent      = '$99 / year';
+    document.getElementById('successPlanName').textContent = 'Annual Plan — $99/year';
+    showPage('payment');
+  });
+
+  document.getElementById('backFromPayment').addEventListener('click', function() {
+    document.getElementById('payError').style.display = 'none';
+    showPage('home');
+  });
+
+  // Auto-format card number as groups of 4
+  document.getElementById('cardNumber').addEventListener('input', function() {
+    var digits = this.value.replace(/\D/g, '').substring(0, 16);
+    this.value = digits.replace(/(.{4})/g, '$1 ').trim();
+  });
+
+  // Auto-format expiry as MM / YY
+  document.getElementById('cardExpiry').addEventListener('input', function() {
+    var digits = this.value.replace(/\D/g, '').substring(0, 4);
+    this.value = digits.length >= 3 ? digits.substring(0, 2) + ' / ' + digits.substring(2) : digits;
+  });
+
+  document.getElementById('submitPayment').addEventListener('click', function() {
+    var name   = document.getElementById('cardName').value.trim();
+    var number = document.getElementById('cardNumber').value.trim();
+    var expiry = document.getElementById('cardExpiry').value.trim();
+    var cvv    = document.getElementById('cardCVV').value.trim();
+    var err    = document.getElementById('payError');
+
+    if (!name || !number || !expiry || !cvv) {
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none';
+    showPage('success');
+  });
+
+
+  // ----- Success page -----
+  document.getElementById('backFromSuccess').addEventListener('click', function() {
+    showPage('home');
+  });
+
+  document.getElementById('successHomeBtn').addEventListener('click', function() {
+    showPage('home');
+  });
+
+
+  // ----- Top 10 page -----
+  document.getElementById('backFromTop10').addEventListener('click', function() {
+    showPage('home');
+  });
+
+  document.querySelectorAll('.top10-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      openVideo(card.getAttribute('data-video'), card.getAttribute('data-title'), 'top10');
+    });
+  });
+
+
+  // ----- Trending cards (hover = trailer, click = full video) -----
+  document.querySelectorAll('#trendingSection .card').forEach(function(card) {
+    var trailer = card.querySelector('video');
+
+    card.addEventListener('mouseenter', function() { trailer.play(); });
+    card.addEventListener('mouseleave', function() { trailer.pause(); trailer.currentTime = 0; });
+    card.addEventListener('click', function() {
+      openVideo(card.getAttribute('data-video'), card.getAttribute('data-title'), 'home');
+    });
+  });
+
+
+  // ----- Weekly cards (hover = trailer, click = full video) -----
+  document.querySelectorAll('.weekly-card').forEach(function(card) {
+    var trailer = card.querySelector('.weekly-video');
+
+    card.addEventListener('mouseenter', function() { trailer.play(); });
+    card.addEventListener('mouseleave', function() { trailer.pause(); trailer.currentTime = 0; });
+    card.addEventListener('click', function() {
+      openVideo(card.getAttribute('data-video'), card.getAttribute('data-title'), 'home');
+    });
+  });
+
+
+  // ----- Movies browse page -----
+  document.getElementById('backFromMovies').addEventListener('click', function() {
+    showPage('home');
+  });
+
+  // Genre tab filtering
+  document.querySelectorAll('.genre-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      // Update active tab
+      document.querySelectorAll('.genre-tab').forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+
+      // Show/hide genre sections
+      var genre = tab.getAttribute('data-genre');
+      document.querySelectorAll('.genre-section').forEach(function(section) {
+        var match = genre === 'all' || section.getAttribute('data-section') === genre;
+        section.style.display = match ? 'block' : 'none';
+      });
+    });
+  });
+
+  // Click a browse card to play it
+  document.querySelectorAll('.movie-browse-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      openVideo(card.getAttribute('data-video'), card.getAttribute('data-title'), 'movies');
+    });
+  });
+
+
+  // ----- Add hover play button to each trending card -----
+  document.querySelectorAll('#trendingSection .card').forEach(function(card) {
+    var btn = document.createElement('div');
+    btn.className = 'play-hover-btn';
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+    card.appendChild(btn);
+  });
+
+
+  // ----- Video player -----
+  var moviePlayer = document.getElementById('moviePlayer');
+
+  function openVideo(src, title, returnTo) {
+    videoReturnPage = returnTo;
+    moviePlayer.src = src;
+    moviePlayer.load();
+    showPage('video');
+  }
+
+  document.getElementById('backFromVideo').addEventListener('click', function() {
+    moviePlayer.pause();
+    moviePlayer.src = '';
+    showPage(videoReturnPage);
+  });
+
+</script>
+</body>
+</html>
