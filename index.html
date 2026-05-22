@@ -25,6 +25,14 @@
       <a href="#" id="navMovies">Movies</a>
     </nav>
     <button class="signin-btn" id="signinBtn">Sign In</button>
+    <!-- Shown only when signed in -->
+    <div id="userPill" style="display:none; align-items:center; gap:10px; position:relative;">
+      <div id="userAvatar" style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#e50914,#ff6b35);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;color:#fff;cursor:pointer;letter-spacing:0.5px;" title="Account"></div>
+      <div id="userDropdown" style="display:none;position:absolute;top:48px;right:0;background:#1a1a2e;border:1px solid rgba(255,255,255,0.12);border-radius:12px;min-width:180px;padding:8px 0;box-shadow:0 8px 32px #000a;z-index:9000;">
+        <div id="userDropdownName" style="padding:12px 16px 8px;font-size:13px;color:#aaa;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px;"></div>
+        <a href="#" id="signOutBtn" style="display:block;padding:10px 16px;color:#ff4444;font-size:14px;text-decoration:none;" >&#x2192; Sign Out</a>
+      </div>
+    </div>
   </header>
 
   <!-- Hero Slider -->
@@ -32,92 +40,92 @@
     <div class="hero-slider">
       <div class="hero-track">
 
-        <div class="hero-slide">
+        <div class="hero-slide" data-video="movie1.mp4" data-title="The Last Kingdom" data-desc="A Saxon warrior fights to reclaim his birthright in a battle between kingdoms. War. Power. Destiny." data-genre="Action" data-year="2025" data-rating="8.7">
           <img src="newimg1.png" alt="The Last Kingdom">
           <div class="hero-text">
             <div class="hero-badge">Now Streaming</div>
             <h1>The Last Kingdom</h1>
             <p>War. Power. Destiny.</p>
             <div class="hero-buttons">
-              <button class="play-btn">
+              <button class="play-btn hero-watch-btn">
                 <span class="play-icon-wrap">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                 </span>
                 Watch Now
               </button>
-              <button class="info-btn">More Info</button>
+              <button class="info-btn hero-info-btn">More Info</button>
             </div>
           </div>
         </div>
 
-        <div class="hero-slide">
+        <div class="hero-slide" data-video="movie2.mp4" data-title="Shadow Empire" data-desc="An ancient empire rises from the shadows, and only one alliance can stop it. When darkness rises, heroes fall." data-genre="Action" data-year="2026" data-rating="8.2">
           <img src="newimg2.png" alt="Shadow Empire">
           <div class="hero-text">
             <div class="hero-badge">Now Streaming</div>
             <h1>Shadow Empire</h1>
             <p>When darkness rises, heroes fall.</p>
             <div class="hero-buttons">
-              <button class="play-btn">
+              <button class="play-btn hero-watch-btn">
                 <span class="play-icon-wrap">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                 </span>
                 Watch Now
               </button>
-              <button class="info-btn">More Info</button>
+              <button class="info-btn hero-info-btn">More Info</button>
             </div>
           </div>
         </div>
 
-        <div class="hero-slide">
+        <div class="hero-slide" data-video="weekly01.mp4" data-title="Midnight Horizon" data-desc="An astronaut lost beyond the edge of the known universe discovers a truth that changes everything. Beyond the stars lies truth." data-genre="Sci-Fi" data-year="2026" data-rating="8.7">
           <img src="newimg3.jpg" alt="Midnight Horizon">
           <div class="hero-text">
             <div class="hero-badge">Now Streaming</div>
             <h1>Midnight Horizon</h1>
             <p>Beyond the stars lies truth.</p>
             <div class="hero-buttons">
-              <button class="play-btn">
+              <button class="play-btn hero-watch-btn">
                 <span class="play-icon-wrap">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                 </span>
                 Watch Now
               </button>
-              <button class="info-btn">More Info</button>
+              <button class="info-btn hero-info-btn">More Info</button>
             </div>
           </div>
         </div>
 
-        <div class="hero-slide">
+        <div class="hero-slide" data-video="movie5.mp4" data-title="Silent Code" data-desc="A rogue hacker uncovers a government conspiracy buried deep inside an encrypted network. One hacker. One mission." data-genre="Sci-Fi / Thriller" data-year="2026" data-rating="7.8">
           <img src="newimg4.jpg" alt="Silent Code">
           <div class="hero-text">
             <div class="hero-badge">Now Streaming</div>
             <h1>Silent Code</h1>
             <p>One hacker. One mission.</p>
             <div class="hero-buttons">
-              <button class="play-btn">
+              <button class="play-btn hero-watch-btn">
                 <span class="play-icon-wrap">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                 </span>
                 Watch Now
               </button>
-              <button class="info-btn">More Info</button>
+              <button class="info-btn hero-info-btn">More Info</button>
             </div>
           </div>
         </div>
 
-        <div class="hero-slide">
+        <div class="hero-slide" data-video="movie4.mp4" data-title="Crimson Night" data-desc="When the sun goes down, the city's darkest secrets come alive in a violent world of crime and redemption. The city bleeds after midnight." data-genre="Action / Crime" data-year="2025" data-rating="8.0">
           <img src="newimg5.png" alt="Crimson Night">
           <div class="hero-text">
             <div class="hero-badge">Now Streaming</div>
             <h1>Crimson Night</h1>
             <p>The city bleeds after midnight.</p>
             <div class="hero-buttons">
-              <button class="play-btn">
+              <button class="play-btn hero-watch-btn">
                 <span class="play-icon-wrap">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                 </span>
                 Watch Now
               </button>
-              <button class="info-btn">More Info</button>
+              <button class="info-btn hero-info-btn">More Info</button>
             </div>
           </div>
         </div>
@@ -202,7 +210,7 @@
     <div class="pricing-content">
       <h2>Choose Your Plan</h2>
       <p class="pricing-sub">Stream unlimited movies &amp; series in ultra quality</p>
-      <div class="pricing-wrapper">
+      <div class="pricing-wrapper" style="display:flex; flex-wrap:wrap; gap:28px; justify-content:center; align-items:stretch;">
 
         <div class="pricing-card">
           <h3>Monthly Plan</h3>
@@ -233,18 +241,18 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-container">
-      <nav class="footer-nav">
-        <a href="#">About</a>
-        <a href="#">Help</a>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a>
-        <a href="#">Terms</a>
+    <div class="footer-container" style="display:flex; flex-direction:column; align-items:center; gap:16px; padding:40px 24px 24px; text-align:center;">
+      <nav class="footer-nav" style="display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:center; list-style:none; margin:0; padding:0;">
+        <a href="#" id="footerAbout">About</a>
+        <a href="#" id="footerHelp">Help</a>
+        <a href="#" id="footerCareers">Careers</a>
+        <a href="#" id="footerContact">Contact</a>
+        <a href="#" id="footerTerms">Terms</a>
       </nav>
-      <nav class="footer-secondary">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookie Settings</a>
-        <a href="#">Ad Choices</a>
+      <nav class="footer-secondary" style="display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:center; list-style:none; margin:0; padding:0;">
+        <a href="#" id="footerPrivacy">Privacy Policy</a>
+        <a href="#" id="footerCookies">Cookie Settings</a>
+        <a href="#" id="footerAdChoices">Ad Choices</a>
       </nav>
       <div class="footer-info">
         <p>&copy; 2026 NOVASTREAM. All Rights Reserved.</p>
@@ -595,6 +603,70 @@
 
 
 <!-- ================================================
+     SIGNED-IN TOAST
+================================================ -->
+<div id="signedInToast" style="display:none;position:fixed;top:80px;right:24px;z-index:99999;background:linear-gradient(135deg,#1a1a2e,#16213e);border:1px solid rgba(229,9,20,0.4);border-radius:14px;padding:16px 22px;box-shadow:0 8px 32px rgba(0,0,0,0.6);max-width:300px;animation:slideIn 0.4s ease;">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#e50914,#ff6b35);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">✓</div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:15px;margin-bottom:2px;">Signed in successfully!</div>
+      <div id="toastUserName" style="color:#aaa;font-size:13px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     FOOTER MODALS (Help, Contact, About, Terms, Privacy, Careers, Cookies, Ad Choices)
+================================================ -->
+<div id="footerModalOverlay" style="display:none;position:fixed;inset:0;z-index:88888;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;">
+  <div style="background:#0f0f1a;border:1px solid rgba(255,255,255,0.1);border-radius:18px;max-width:620px;width:92%;max-height:80vh;overflow-y:auto;position:relative;box-shadow:0 16px 64px #000c;">
+    <button id="closeFooterModal" style="position:sticky;top:0;float:right;margin:16px 16px 0 0;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:20px;cursor:pointer;width:34px;height:34px;border-radius:50%;z-index:1;">&times;</button>
+    <div id="footerModalContent" style="padding:36px 36px 40px;clear:both;"></div>
+  </div>
+</div>
+
+<style>
+@keyframes slideIn { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+.footer-modal-h1 { font-family:'Bebas Neue',sans-serif; font-size:32px; color:#fff; margin:0 0 6px; letter-spacing:1px; }
+.footer-modal-h2 { font-size:17px; font-weight:700; color:#e50914; margin:24px 0 8px; }
+.footer-modal-p  { font-size:14px; color:#bbb; line-height:1.75; margin:0 0 12px; }
+.footer-modal-badge { display:inline-block; background:rgba(229,9,20,0.15); color:#e50914; border:1px solid rgba(229,9,20,0.3); border-radius:6px; padding:3px 10px; font-size:12px; font-weight:600; margin-bottom:18px; }
+.footer-modal-divider { border:none; border-top:1px solid rgba(255,255,255,0.08); margin:20px 0; }
+.contact-field { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:12px 14px; color:#fff; font-size:14px; width:100%; box-sizing:border-box; margin-bottom:12px; font-family:inherit; outline:none; }
+.contact-field:focus { border-color:#e50914; }
+.contact-send-btn { background:#e50914; color:#fff; border:none; border-radius:10px; padding:12px 28px; font-size:15px; font-weight:700; cursor:pointer; width:100%; margin-top:4px; }
+.contact-send-btn:hover { background:#c8000f; }
+</style>
+
+<!-- ================================================
+     MORE INFO MODAL
+================================================ -->
+<div id="moreInfoModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.85); display:none; align-items:center; justify-content:center;">
+  <div id="moreInfoBox" style="background:#1a1a2e; border-radius:16px; max-width:560px; width:90%; padding:0; overflow:hidden; position:relative; box-shadow:0 8px 48px #000a;">
+    <img id="miPoster" src="" alt="" style="width:100%; height:280px; object-fit:cover; display:block;">
+    <div style="position:absolute;top:0;left:0;right:0;height:280px;background:linear-gradient(to bottom,transparent 40%,#1a1a2e 100%);"></div>
+    <button id="closeInfoModal" style="position:absolute;top:14px;right:16px;background:rgba(0,0,0,0.6);border:none;color:#fff;font-size:22px;cursor:pointer;width:36px;height:36px;border-radius:50%;line-height:1;">&times;</button>
+    <div style="padding:24px 28px 28px;">
+      <div id="miBadge" style="display:inline-block;background:#e50914;color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:4px;margin-bottom:10px;">Now Streaming</div>
+      <h2 id="miTitle" style="margin:0 0 8px;font-size:28px;color:#fff;font-family:'Bebas Neue',sans-serif;letter-spacing:1px;"></h2>
+      <div style="display:flex;gap:14px;align-items:center;margin-bottom:14px;flex-wrap:wrap;">
+        <span id="miYear" style="color:#aaa;font-size:13px;"></span>
+        <span id="miGenre" style="color:#aaa;font-size:13px;"></span>
+        <span id="miRating" style="color:#f5c518;font-size:13px;font-weight:600;">⭐</span>
+      </div>
+      <p id="miDesc" style="color:#ccc;font-size:14px;line-height:1.65;margin-bottom:22px;"></p>
+      <div style="display:flex;gap:12px;">
+        <button id="miWatchBtn" style="flex:1;padding:12px;background:#e50914;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Watch Now
+        </button>
+        <button id="miCloseBtn" style="flex:1;padding:12px;background:rgba(255,255,255,0.12);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
      JAVASCRIPT
 ================================================ -->
 <script>
@@ -669,16 +741,7 @@
   });
 
   document.getElementById('submitSignin').addEventListener('click', function() {
-    var email = document.getElementById('siEmail').value.trim();
-    var pass  = document.getElementById('siPassword').value.trim();
-    var err   = document.getElementById('siError');
-
-    if (!email || !pass) {
-      err.style.display = 'block';
-      return;
-    }
-    err.style.display = 'none';
-    showPage('home');
+    // Main sign-in logic is handled by the auth state handler below
   });
 
   document.getElementById('goToSignup').addEventListener('click', function(e) {
@@ -713,15 +776,46 @@
     var agreed  = document.getElementById('agreeTerms').checked;
     var err     = document.getElementById('suError');
 
-    if (!first || !last || !email || !pass || !confirm || !agreed) {
-      err.textContent = 'Please fill in all fields and agree to terms.';
-      err.style.display = 'block';
-      return;
+    // All fields required
+    if (!first || !last || !email || !pass || !confirm) {
+      err.textContent = 'Please fill in all fields.';
+      err.style.display = 'block'; return;
     }
+    // Names: letters, spaces, hyphens only — no numbers or special chars
+    var nameRegex = /^[A-Za-z\s\-']+$/;
+    if (!nameRegex.test(first)) {
+      err.textContent = 'First name must contain letters only (no numbers or symbols).';
+      err.style.display = 'block'; return;
+    }
+    if (!nameRegex.test(last)) {
+      err.textContent = 'Last name must contain letters only (no numbers or symbols).';
+      err.style.display = 'block'; return;
+    }
+    // Valid email format
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailRegex.test(email)) {
+      err.textContent = 'Please enter a valid email address (e.g. you@example.com).';
+      err.style.display = 'block'; return;
+    }
+    // Password length
+    if (pass.length < 8) {
+      err.textContent = 'Password must be at least 8 characters long.';
+      err.style.display = 'block'; return;
+    }
+    // Password must have at least one letter and one number
+    if (!/[A-Za-z]/.test(pass) || !/[0-9]/.test(pass)) {
+      err.textContent = 'Password must contain at least one letter and one number.';
+      err.style.display = 'block'; return;
+    }
+    // Passwords match
     if (pass !== confirm) {
       err.textContent = 'Passwords do not match.';
-      err.style.display = 'block';
-      return;
+      err.style.display = 'block'; return;
+    }
+    // Terms agreement
+    if (!agreed) {
+      err.textContent = 'You must agree to the Terms & Privacy Policy.';
+      err.style.display = 'block'; return;
     }
     err.style.display = 'none';
     showPage('home');
@@ -800,14 +894,30 @@
 
   document.getElementById('submitPayment').addEventListener('click', function() {
     var name   = document.getElementById('cardName').value.trim();
-    var number = document.getElementById('cardNumber').value.trim();
+    var number = document.getElementById('cardNumber').value.replace(/\s/g, '');
     var expiry = document.getElementById('cardExpiry').value.trim();
     var cvv    = document.getElementById('cardCVV').value.trim();
     var err    = document.getElementById('payError');
 
     if (!name || !number || !expiry || !cvv) {
-      err.style.display = 'block';
-      return;
+      err.textContent = 'Please fill in all payment fields.';
+      err.style.display = 'block'; return;
+    }
+    if (!/^[A-Za-z\s]+$/.test(name)) {
+      err.textContent = 'Name on card must contain letters only.';
+      err.style.display = 'block'; return;
+    }
+    if (!/^\d{16}$/.test(number)) {
+      err.textContent = 'Card number must be exactly 16 digits.';
+      err.style.display = 'block'; return;
+    }
+    if (!/^\d{2}\s*\/\s*\d{2}$/.test(expiry)) {
+      err.textContent = 'Expiry must be in MM / YY format.';
+      err.style.display = 'block'; return;
+    }
+    if (!/^\d{3,4}$/.test(cvv)) {
+      err.textContent = 'CVV must be 3 or 4 digits.';
+      err.style.display = 'block'; return;
     }
     err.style.display = 'none';
     showPage('success');
@@ -912,6 +1022,317 @@
     moviePlayer.pause();
     moviePlayer.src = '';
     showPage(videoReturnPage);
+  });
+
+
+  // ----- Hero "Watch Now" buttons -----
+  document.querySelectorAll('.hero-watch-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var slide = btn.closest('.hero-slide');
+      var src   = slide.getAttribute('data-video');
+      var title = slide.getAttribute('data-title');
+      openVideo(src, title, 'home');
+    });
+  });
+
+  // ----- Hero "More Info" modal -----
+  var modal = document.getElementById('moreInfoModal');
+  var currentInfoVideo = '';
+  var currentInfoTitle = '';
+
+  function openInfoModal(slide) {
+    currentInfoVideo = slide.getAttribute('data-video');
+    currentInfoTitle = slide.getAttribute('data-title');
+    var desc   = slide.getAttribute('data-desc')   || '';
+    var genre  = slide.getAttribute('data-genre')  || '';
+    var year   = slide.getAttribute('data-year')   || '';
+    var rating = slide.getAttribute('data-rating') || '';
+    var img    = slide.querySelector('img');
+
+    document.getElementById('miPoster').src = img ? img.src : '';
+    document.getElementById('miTitle').textContent  = currentInfoTitle;
+    document.getElementById('miDesc').textContent   = desc;
+    document.getElementById('miGenre').textContent  = genre;
+    document.getElementById('miYear').textContent   = year;
+    document.getElementById('miRating').textContent = rating ? '⭐ ' + rating : '';
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeInfoModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.hero-info-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      openInfoModal(btn.closest('.hero-slide'));
+    });
+  });
+
+  document.getElementById('closeInfoModal').addEventListener('click', closeInfoModal);
+  document.getElementById('miCloseBtn').addEventListener('click', closeInfoModal);
+  document.getElementById('miWatchBtn').addEventListener('click', function() {
+    closeInfoModal();
+    openVideo(currentInfoVideo, currentInfoTitle, 'home');
+  });
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeInfoModal();
+  });
+
+
+  // ===== SIGNED-IN STATE MANAGEMENT =====
+  var currentUser = null; // { firstName, lastName, email }
+
+  function setSignedIn(user) {
+    currentUser = user;
+    var initials = (user.firstName[0] + user.lastName[0]).toUpperCase();
+    // Hide Sign In button, show user pill
+    document.getElementById('signinBtn').style.display = 'none';
+    var pill = document.getElementById('userPill');
+    pill.style.display = 'flex';
+    document.getElementById('userAvatar').textContent = initials;
+    document.getElementById('userDropdownName').textContent = user.firstName + ' ' + user.lastName;
+    // Show toast
+    showSignedInToast(user.firstName + ' ' + user.lastName);
+  }
+
+  function setSignedOut() {
+    currentUser = null;
+    document.getElementById('signinBtn').style.display = '';
+    document.getElementById('userPill').style.display = 'none';
+    document.getElementById('userDropdown').style.display = 'none';
+  }
+
+  function showSignedInToast(name) {
+    var toast = document.getElementById('signedInToast');
+    document.getElementById('toastUserName').textContent = 'Welcome back, ' + name + '!';
+    toast.style.display = 'block';
+    toast.style.animation = 'slideIn 0.4s ease';
+    clearTimeout(window._toastTimer);
+    window._toastTimer = setTimeout(function() {
+      toast.style.animation = 'fadeOut 0.5s ease forwards';
+      setTimeout(function() { toast.style.display = 'none'; toast.style.animation = ''; }, 500);
+    }, 3500);
+  }
+
+  // Toggle user dropdown
+  document.getElementById('userAvatar').addEventListener('click', function(e) {
+    e.stopPropagation();
+    var dd = document.getElementById('userDropdown');
+    dd.style.display = dd.style.display === 'none' ? 'block' : 'none';
+  });
+  document.addEventListener('click', function() {
+    document.getElementById('userDropdown').style.display = 'none';
+  });
+
+  // Sign Out
+  document.getElementById('signOutBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    setSignedOut();
+    showPage('home');
+  });
+
+  // Patch Sign In submit to call setSignedIn
+  document.getElementById('submitSignin').addEventListener('click', function() {
+    var email = document.getElementById('siEmail').value.trim();
+    var pass  = document.getElementById('siPassword').value.trim();
+    var err   = document.getElementById('siError');
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!email || !pass) { err.textContent='Please fill in all fields.'; err.style.display='block'; return; }
+    if (!emailRegex.test(email)) { err.textContent='Please enter a valid email address.'; err.style.display='block'; return; }
+    if (pass.length < 8) { err.textContent='Password must be at least 8 characters.'; err.style.display='block'; return; }
+    err.style.display = 'none';
+    // Derive display name from email prefix
+    var namePart = email.split('@')[0].replace(/[^a-zA-Z]/g,' ').trim();
+    var parts = namePart.split(' ').filter(Boolean);
+    var firstName = parts[0] ? (parts[0][0].toUpperCase() + parts[0].slice(1)) : 'User';
+    var lastName  = parts[1] ? (parts[1][0].toUpperCase() + parts[1].slice(1)) : '';
+    setSignedIn({ firstName: firstName, lastName: lastName || 'Account', email: email });
+    showPage('home');
+  });
+
+  // Patch Sign Up submit to call setSignedIn
+  document.getElementById('submitSignup').addEventListener('click', function() {
+    // validation already runs in the earlier handler; check if page changed
+    // We piggyback — run after the existing handler via a small delay
+    setTimeout(function() {
+      var first = document.getElementById('suFirst').value.trim();
+      var last  = document.getElementById('suLast').value.trim();
+      var email = document.getElementById('suEmail').value.trim();
+      // Only set signed in if validation passed (page is now home)
+      if (first && last && email && document.getElementById('homePage').style.display !== 'none') {
+        setSignedIn({ firstName: first, lastName: last, email: email });
+      }
+    }, 50);
+  });
+
+
+  // ===== FOOTER MODALS =====
+  var footerContent = {
+    about: `
+      <span class="footer-modal-badge">About NOVASTREAM</span>
+      <h1 class="footer-modal-h1">Our Story</h1>
+      <p class="footer-modal-p">NOVASTREAM was founded in 2022 with a single mission: to make world-class entertainment accessible to everyone, everywhere. We believe great stories have the power to connect people, spark conversations, and change lives.</p>
+      <hr class="footer-modal-divider">
+      <h2 class="footer-modal-h2">What We Offer</h2>
+      <p class="footer-modal-p">From pulse-pounding action thrillers to quiet, character-driven dramas — our library of thousands of titles spans every genre and mood. New originals and exclusives drop every week.</p>
+      <h2 class="footer-modal-h2">Our Technology</h2>
+      <p class="footer-modal-p">Stream in 4K Ultra HD with Dolby Atmos audio on up to 4 devices simultaneously. Our adaptive streaming engine ensures a smooth experience even on slower connections.</p>
+      <h2 class="footer-modal-h2">Our Values</h2>
+      <p class="footer-modal-p">We are committed to diversity in storytelling, creator independence, and a platform that is safe and welcoming for all audiences. NOVASTREAM is proudly ad-free — your subscription is what keeps the lights on.</p>`,
+
+    help: `
+      <span class="footer-modal-badge">Help Centre</span>
+      <h1 class="footer-modal-h1">How Can We Help?</h1>
+      <h2 class="footer-modal-h2">&#128272; Account & Sign In</h2>
+      <p class="footer-modal-p">Forgot your password? Use the "Forgot password?" link on the Sign In page to reset it instantly. You can also update your email or password at any time from your account settings.</p>
+      <h2 class="footer-modal-h2">&#127916; Streaming & Playback</h2>
+      <p class="footer-modal-p">If a video buffers or won't play, try refreshing the page or clearing your browser cache. Make sure your internet speed is at least 5 Mbps for HD and 25 Mbps for 4K playback.</p>
+      <h2 class="footer-modal-h2">&#128179; Billing & Subscriptions</h2>
+      <p class="footer-modal-p">You can view, change, or cancel your subscription at any time from your account page. Cancellations take effect at the end of your current billing period — you will never be charged unexpectedly.</p>
+      <h2 class="footer-modal-h2">&#128241; Supported Devices</h2>
+      <p class="footer-modal-p">NOVASTREAM works on all modern browsers, iOS & Android phones and tablets, Smart TVs (Samsung, LG, Sony), Apple TV, Android TV, Chromecast, and Fire TV Stick.</p>
+      <h2 class="footer-modal-h2">&#128236; Still Need Help?</h2>
+      <p class="footer-modal-p">Our support team is available 24/7. Use the <strong style="color:#fff;">Contact Us</strong> page to send us a message and we will get back to you within a few hours.</p>`,
+
+    contact: `
+      <span class="footer-modal-badge">Contact Us</span>
+      <h1 class="footer-modal-h1">Get In Touch</h1>
+      <p class="footer-modal-p">Have a question, a suggestion, or spotted a bug? We'd love to hear from you. Fill in the form below and our team will respond within 24 hours.</p>
+      <hr class="footer-modal-divider">
+      <input class="contact-field" id="ctName" placeholder="Your Name" type="text">
+      <input class="contact-field" id="ctEmail" placeholder="Your Email" type="email">
+      <select class="contact-field" id="ctTopic" style="appearance:none;cursor:pointer;">
+        <option value="">Select a Topic</option>
+        <option>Account & Billing</option>
+        <option>Playback Issue</option>
+        <option>Content Request</option>
+        <option>Report a Bug</option>
+        <option>General Inquiry</option>
+      </select>
+      <textarea class="contact-field" id="ctMsg" rows="4" placeholder="Your message..."></textarea>
+      <p id="ctError" style="color:#ff4444;font-size:13px;display:none;margin-bottom:8px;"></p>
+      <p id="ctSuccess" style="color:#2ecc71;font-size:13px;display:none;margin-bottom:8px;">&#10003; Message sent! We'll be in touch within 24 hours.</p>
+      <button class="contact-send-btn" id="ctSendBtn">Send Message</button>`,
+
+    careers: `
+      <span class="footer-modal-badge">Join Our Team</span>
+      <h1 class="footer-modal-h1">Careers at NOVASTREAM</h1>
+      <p class="footer-modal-p">We're a fast-growing team of engineers, designers, content creators, and storytellers building the future of entertainment. We're always looking for passionate people to join us.</p>
+      <hr class="footer-modal-divider">
+      <h2 class="footer-modal-h2">&#128187; Engineering</h2>
+      <p class="footer-modal-p"><strong style="color:#fff;">Senior Frontend Engineer</strong> — Remote / Full-time<br>Help us build the world's best streaming interface using React, TypeScript, and WebRTC.</p>
+      <h2 class="footer-modal-h2">&#127916; Content</h2>
+      <p class="footer-modal-p"><strong style="color:#fff;">Content Acquisition Manager</strong> — Los Angeles, CA<br>Source, negotiate, and onboard new titles from independent studios and global distributors.</p>
+      <h2 class="footer-modal-h2">&#127775; Design</h2>
+      <p class="footer-modal-p"><strong style="color:#fff;">Senior Product Designer</strong> — Remote / Full-time<br>Shape the visual language and interaction design of NOVASTREAM across all platforms.</p>
+      <hr class="footer-modal-divider">
+      <p class="footer-modal-p">To apply, email your CV and portfolio to <strong style="color:#e50914;">careers@novastream.com</strong>. We review every application personally.</p>`,
+
+    terms: `
+      <span class="footer-modal-badge">Legal</span>
+      <h1 class="footer-modal-h1">Terms of Service</h1>
+      <p class="footer-modal-p">Last updated: January 1, 2026</p>
+      <h2 class="footer-modal-h2">1. Acceptance of Terms</h2>
+      <p class="footer-modal-p">By accessing or using NOVASTREAM, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our service.</p>
+      <h2 class="footer-modal-h2">2. Subscription & Payment</h2>
+      <p class="footer-modal-p">Your NOVASTREAM subscription will automatically renew at the end of each billing period unless you cancel before the renewal date. All payments are non-refundable except as required by law.</p>
+      <h2 class="footer-modal-h2">3. Acceptable Use</h2>
+      <p class="footer-modal-p">You may not reproduce, distribute, or publicly perform any content from NOVASTREAM. Account sharing is limited to members of your household. Commercial use of any content is strictly prohibited.</p>
+      <h2 class="footer-modal-h2">4. Content Availability</h2>
+      <p class="footer-modal-p">NOVASTREAM's library may vary by region and is subject to change. We reserve the right to add, remove, or modify content at any time without notice.</p>
+      <h2 class="footer-modal-h2">5. Limitation of Liability</h2>
+      <p class="footer-modal-p">NOVASTREAM is provided "as is" without warranties of any kind. We shall not be liable for any indirect, incidental, or consequential damages arising from your use of the service.</p>`,
+
+    privacy: `
+      <span class="footer-modal-badge">Legal</span>
+      <h1 class="footer-modal-h1">Privacy Policy</h1>
+      <p class="footer-modal-p">Last updated: January 1, 2026</p>
+      <h2 class="footer-modal-h2">Information We Collect</h2>
+      <p class="footer-modal-p">We collect information you provide directly (name, email, payment details), information about your usage (watch history, search queries, device info), and information from third-party partners to improve recommendations.</p>
+      <h2 class="footer-modal-h2">How We Use Your Data</h2>
+      <p class="footer-modal-p">Your data is used to personalise your experience, process payments, send service communications, improve our platform, and comply with legal obligations. We never sell your personal data to advertisers.</p>
+      <h2 class="footer-modal-h2">Data Sharing</h2>
+      <p class="footer-modal-p">We share data only with trusted service providers (payment processors, CDN providers, analytics), and only as necessary to operate the service. All partners are contractually bound to protect your data.</p>
+      <h2 class="footer-modal-h2">Your Rights</h2>
+      <p class="footer-modal-p">You have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact us at <strong style="color:#e50914;">privacy@novastream.com</strong>.</p>`,
+
+    cookies: `
+      <span class="footer-modal-badge">Cookie Policy</span>
+      <h1 class="footer-modal-h1">Cookie Settings</h1>
+      <p class="footer-modal-p">NOVASTREAM uses cookies and similar technologies to provide, protect, and improve our service. Here is what we use and why.</p>
+      <hr class="footer-modal-divider">
+      <h2 class="footer-modal-h2">&#9989; Essential Cookies — Always On</h2>
+      <p class="footer-modal-p">Required for the service to work — keeping you signed in, remembering your preferences, and securing your account. These cannot be disabled.</p>
+      <h2 class="footer-modal-h2">&#128202; Analytics Cookies</h2>
+      <p class="footer-modal-p">Help us understand how people use NOVASTREAM so we can improve it. All data is aggregated and anonymous. You can opt out at any time.</p>
+      <h2 class="footer-modal-h2">&#127919; Personalisation Cookies</h2>
+      <p class="footer-modal-p">Power our recommendation engine by remembering what you've watched and what you might enjoy next. Without these, recommendations will be generic.</p>
+      <hr class="footer-modal-divider">
+      <p class="footer-modal-p">To manage your cookie preferences, clear your browser cookies or adjust your browser's privacy settings. For more details see our Privacy Policy.</p>`,
+
+    adchoices: `
+      <span class="footer-modal-badge">Advertising</span>
+      <h1 class="footer-modal-h1">Ad Choices</h1>
+      <p class="footer-modal-p">NOVASTREAM is a <strong style="color:#fff;">100% subscription-funded, ad-free platform</strong>. We do not show advertisements during your viewing experience and we do not sell your personal data to advertisers — ever.</p>
+      <hr class="footer-modal-divider">
+      <h2 class="footer-modal-h2">Why No Ads?</h2>
+      <p class="footer-modal-p">We believe your entertainment time should be uninterrupted. Your monthly or annual subscription covers the full cost of the platform, so we have no incentive to monetise your attention or data.</p>
+      <h2 class="footer-modal-h2">Third-Party Links</h2>
+      <p class="footer-modal-p">Some pages may link to third-party websites. NOVASTREAM is not responsible for the advertising practices of those external sites. We encourage you to read their privacy policies.</p>
+      <h2 class="footer-modal-h2">Interest-Based Advertising</h2>
+      <p class="footer-modal-p">If you have opted in to interest-based advertising through your browser or device settings, you may see NOVASTREAM promoted on other platforms. This is separate from your in-app experience and never involves your viewing data.</p>`
+  };
+
+  function openFooterModal(key) {
+    var overlay = document.getElementById('footerModalOverlay');
+    document.getElementById('footerModalContent').innerHTML = footerContent[key] || '';
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    // Wire contact form send button if present
+    var sendBtn = document.getElementById('ctSendBtn');
+    if (sendBtn) {
+      sendBtn.addEventListener('click', function() {
+        var n = (document.getElementById('ctName') || {}).value || '';
+        var e = (document.getElementById('ctEmail') || {}).value || '';
+        var t = (document.getElementById('ctTopic') || {}).value || '';
+        var m = (document.getElementById('ctMsg') || {}).value || '';
+        var errEl = document.getElementById('ctError');
+        var okEl  = document.getElementById('ctSuccess');
+        if (!n.trim() || !e.trim() || !t || !m.trim()) {
+          errEl.textContent = 'Please fill in all fields.'; errEl.style.display = 'block'; okEl.style.display = 'none'; return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e.trim())) {
+          errEl.textContent = 'Please enter a valid email address.'; errEl.style.display = 'block'; okEl.style.display = 'none'; return;
+        }
+        errEl.style.display = 'none'; okEl.style.display = 'block';
+        document.getElementById('ctName').value = '';
+        document.getElementById('ctEmail').value = '';
+        document.getElementById('ctTopic').value = '';
+        document.getElementById('ctMsg').value = '';
+      });
+    }
+  }
+
+  function closeFooterModal() {
+    document.getElementById('footerModalOverlay').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('closeFooterModal').addEventListener('click', closeFooterModal);
+  document.getElementById('footerModalOverlay').addEventListener('click', function(e) {
+    if (e.target === this) closeFooterModal();
+  });
+
+  var footerLinks = {
+    footerAbout: 'about', footerHelp: 'help', footerContact: 'contact',
+    footerCareers: 'careers', footerTerms: 'terms', footerPrivacy: 'privacy',
+    footerCookies: 'cookies', footerAdChoices: 'adchoices'
+  };
+  Object.keys(footerLinks).forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('click', function(e) { e.preventDefault(); openFooterModal(footerLinks[id]); });
   });
 
 </script>
