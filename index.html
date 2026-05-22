@@ -24,7 +24,10 @@
       <a href="#" id="navTop10">Top 10</a>
       <a href="#" id="navMovies">Movies</a>
     </nav>
-    <button class="signin-btn" id="signinBtn">Sign In</button>
+    <div id="authButtons" style="display:flex;align-items:center;gap:10px;">
+      <button class="signin-btn" id="signinBtn">Sign In</button>
+      <button class="signup-nav-btn" id="signupNavBtn" style="padding:8px 20px;background:linear-gradient(135deg,#e50914,#c8000f);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;letter-spacing:0.3px;transition:opacity 0.2s;">Sign Up</button>
+    </div>
     <!-- Shown only when signed in -->
     <div id="userPill" style="display:none; align-items:center; gap:10px; position:relative;">
       <div id="userAvatar" style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#e50914,#ff6b35);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;color:#fff;cursor:pointer;letter-spacing:0.5px;" title="Account"></div>
@@ -735,6 +738,10 @@
     showPage('signin');
   });
 
+  document.getElementById('signupNavBtn').addEventListener('click', function() {
+    showPage('signup');
+  });
+
   document.getElementById('backFromSignin').addEventListener('click', function() {
     document.getElementById('siError').style.display = 'none';
     showPage('home');
@@ -1087,8 +1094,8 @@
   function setSignedIn(user) {
     currentUser = user;
     var initials = (user.firstName[0] + user.lastName[0]).toUpperCase();
-    // Hide Sign In button, show user pill
-    document.getElementById('signinBtn').style.display = 'none';
+    // Hide Sign In + Sign Up buttons, show user pill
+    document.getElementById('authButtons').style.display = 'none';
     var pill = document.getElementById('userPill');
     pill.style.display = 'flex';
     document.getElementById('userAvatar').textContent = initials;
@@ -1099,7 +1106,7 @@
 
   function setSignedOut() {
     currentUser = null;
-    document.getElementById('signinBtn').style.display = '';
+    document.getElementById('authButtons').style.display = 'flex';
     document.getElementById('userPill').style.display = 'none';
     document.getElementById('userDropdown').style.display = 'none';
   }
